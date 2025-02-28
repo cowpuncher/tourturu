@@ -1,0 +1,253 @@
+:root {
+    --font-title: 'Palatino';
+    --font-main: 'Manrope';
+
+    --fs-h1: 55px;
+    --fs-h2: 45px;
+    --fs-h3: 40px;
+    --fs-1: 14px;
+    --fs-2: 16px;
+    --fs-3: 18px;
+    --fs-4: 30px;
+
+    --color-bg: #F4F4F4;
+    --color-text: #171717;
+    --color-light: #C8DFFE;
+    --color-grey: #EBEBEB;
+    --color-1: #9D8EF3;
+    --color-2: #63D69D;
+    --color-3: #1D3748;
+    --color-4: #99FFA7;
+    --color-5: #FFA662;
+    --color-6: #8BF199;
+
+    --hover-1: ##7968D8;
+
+    --br-1: 5px;
+    --br-2: 7px;
+    --br-3: 15px;
+    --br-4: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: var(--fs-1);
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-title);
+}
+
+h1 {    
+    font-size: var(--fs-h1);
+}
+h2 {
+    font-size: var(--fs-h2);
+}
+h3 {
+    font-size: var(--fs-h3);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+button, input,select {
+    font-family: var(--font-main);
+    font-size: var(--fs-1);
+}
+
+.container {
+    max-width: 1500px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.bg-1 {
+    background: var(--color-1);
+    color: #ffffff;
+}
+
+.bg-2 {
+    background: var(--color-2);
+}
+
+.bg-3 {
+    background: var(--color-3);
+}
+
+.bg-4 {
+    background: var(--color-4);
+}
+
+.bg-5 {
+    background: var(--color-5);
+}
+
+.btn {
+    background: var(--color-1);
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+}
+
+.active {
+    background: var(--color-5);
+}
+
+/* Top panel */
+.topPanel {
+    background: #fff;
+    border-radius: var(--br-3);
+    padding: 15px 20px;
+}
+.topPanel,
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation {
+    margin: 0 auto;
+}
+.menu  {
+    gap: 25px;
+}
+.dropmenu {
+    display: none;
+}
+.burgerMenu {
+    color: #fff;
+    background: var(--color-1);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    padding: 10px 16px;
+    border-radius: var(--br-2);
+}
+.burderIcon {
+    display: grid;
+    grid-template-columns: repeat(2, 5px);
+    grid-gap: 2px;
+
+}
+.burderIcon span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 1px;
+    background: #fff;
+}
+
+.topPanel  .phone {
+    font-size: var(--fs-3);
+    font-weight: 600;
+}
+.topPanel .info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 30px 0 21px;
+}
+.mainBanner {
+    background: var(--color-light);
+    border-radius: var(--br-3);
+    margin-top: 35px;
+    padding: 70px 65px;
+    position: relative;
+}
+.mainBanner .image {
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    z-index: 0;
+}
+.mainBannerContent {
+    position: relative;
+    z-index: 1;
+}
+.mainBanner .mainTitle {
+    color: #141414;
+    text-transform: uppercase;
+}
+.mainBannerContent .desc {
+    max-width: 535px;
+    margin: 30px 0;
+}
+.formSerchTour {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0;
+    gap: 20px;
+}
+.formSerchTour .wrap {
+    background: var(--color-6);
+    border-radius: var(--br-4);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+}
+.checkboxLabel {
+    cursor: pointer;
+}
+
+.checkboxLabel input {
+    display: none;
+}
+.checkboxLabel span {
+    padding: 3px 20px;
+    display: inline-flex;
+    border-radius: 500px;
+
+}
+.checkboxLabel input:checked ~ span {
+    background: var(--color-5);
+}
+.formSerchTour .wrap .input,
+.formSerchTour .wrap .select {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    border-radius: 6px;
+    padding: 14px 18px;
+}
+.searchBtnTour {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 6px;
+    font-weight: 600;
+}
+.searchBtnTour .icon {
+    font-weight: 600;
+    background: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

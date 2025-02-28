@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fonts/manrope/stylesheet.css">
+    <link rel="stylesheet" href="./assets/fonts/palatino/stylesheet.css">
+    <link rel="stylesheet" href="./assets/fonts/palatino1/palatino.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>HTML - TourTuru</title>
+</head>
+<body>
+    <div class="mainWrapper">
+        <div class="container">
+            <div class="topPanel">
+                <a href="/" class="logo"><img src="./assets/img/logo.svg" alt=""></a>
+                <nav class="navigation">
+                    <ul class="menu">
+                        <li>
+                            <a href="#">Каталог</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">Автобусные</a></li>
+                                <li><a href="#">Водные</a></li>
+                                <li><a href="#">Пешеходные</a></li>
+                                <li><a href="#">Индивидуальные</a></li>
+                                <li><a href="#">Ночные</a></li>
+                                <li><a href="#">Семейный отдых</a></li>
+                                <li><a href="#">Петропавловская крепость</a></li>
+                                <li><a href="#">Атмосферные места</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Направление</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Скидки</a></li>
+                        <li><a href="#">Гиды</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="contacts">
+                    <a href="tel:89110002211" class="phone">8 999 007 17 20</a>
+                    <address class="address">Набережная реки Мойки, 48/50</address>
+                </div>
+                <div class="info">
+                    <a href="#" class="favorites"><img src="./assets/img/favorite.svg" alt="favorite"></a>
+                    <span class="fearchBth"><img src="./assets/img/search.svg" alt="search"></span>
+                </div>
+                <div class="burgerMenu color-1">
+                    <div class="burderIcon"><span></span><span></span><span></span><span></span></div>
+                    Меню
+                </div>
+            </div>
+            <div class="mainBanner">
+                <div class="image"><img src="./assets/img/banner.png" alt=""></div>
+                <div class="mainBannerContent">
+                    <h1 class="mainTitle">Экскурсии <br> ПО Санкт-ПетербургУ</h1>
+                    <p class="desc">
+                        Мы предлагаем нашим туристам окунуться в мир незабываемых впечатлений, открывая все тайны и красоты Северной столицы и ее окрестностей.
+                    </p>
+                    <span class="smallText">Реестровый номер туроператора: 024208</span>
+                    <form class="formSerchTour">
+                        <div class="wrap">
+                            <input type="date" class="input" placeholder="Дата">
+                            <select class="select">
+                                <option>Длительность</option>
+                                <option value="Любая">Любая</option>
+                                <option value="до 3-ч часов">до 3-ч часов</option>
+                                <option value="3-5 часов">3-5 часов</option>
+                                <option value="более 5 часов">более 5 часов</option>
+                            </select>
+                            <select class="select">
+                                <option>Направления</option>
+                                <option value="Любая">Любая</option>
+                                <option value="до 3-ч часов">до 3-ч часов</option>
+                                <option value="3-5 часов">3-5 часов</option>
+                                <option value="более 5 часов">более 5 часов</option>
+                            </select>
+                            <select class="select">
+                                <option>Спец Предложения</option>
+                                <option value="Любая">Любая</option>
+                                <option value="до 3-ч часов">до 3-ч часов</option>
+                                <option value="3-5 часов">3-5 часов</option>
+                                <option value="более 5 часов">более 5 часов</option>
+                            </select>
+                            <button class="btn searchBtnTour">
+                                Показать экскурсию
+                                <span class="icon"><img src="./assets/img/search-purple.svg" alt=""></span>
+                            </button>
+                        </div>
+                        <div class="wrapCheckbox">
+                            <span class="labelCkeckbox">Популярные направления</span>
+                            <label class="checkboxLabel ">
+                                <input type="checkbox" name=""><span class="bg-1">Водные</span>
+                            </label>
+                            <label class="checkboxLabel">
+                                <input type="checkbox" name=""><span class="bg-1">Автобусные</span>
+                            </label>
+                            <label class="checkboxLabel">
+                                <input type="checkbox" name=""><span class="bg-1">Пешеходные</span>
+                            </label>
+                            <label class="checkboxLabel">
+                                <input type="checkbox" name=""><span class="bg-1">Индивидуальные</span>
+                            </label>
+                            <label class="checkboxLabel">
+                                <input type="checkbox" name=""><span class="bg-1">Авторские</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <main class="mainContent">
+                <section class="section popular">
+                    <h2 class="sectionTitle">Популярные направления</h2>
+                    <p class="sectionDesc">Собрали для вас самые лучшие предложения</p>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
