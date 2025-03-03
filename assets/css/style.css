@@ -56,6 +56,10 @@ h3 {
     font-size: var(--fs-h3);
 }
 
+img {
+    display: block;
+}
+
 ul, ol {
     list-style: none;
 }
@@ -75,6 +79,14 @@ button, input,select {
     margin: 0 auto;
 }
 
+.bg-cloud {
+    background: url(../img/pop-image-5.png) no-repeat ;
+}
+
+.bg-white {
+    background: #fff;
+}
+
 .bg-1 {
     background: var(--color-1);
     color: #ffffff;
@@ -86,6 +98,7 @@ button, input,select {
 
 .bg-3 {
     background: var(--color-3);
+    color: #ffffff;
 }
 
 .bg-4 {
@@ -95,6 +108,10 @@ button, input,select {
 .bg-5 {
     background: var(--color-5);
 }
+.bg-6 {
+    background: linear-gradient(260.58deg, #D9EAFF 28.73%, #C8E1FF 97.05%);
+}
+
 
 .btn {
     background: var(--color-1);
@@ -187,13 +204,13 @@ button, input,select {
     max-width: 535px;
     margin: 30px 0;
 }
-.formSerchTour {
+.formSearchTour {
     display: flex;
     flex-direction: column;
     margin: 20px 0 0;
     gap: 20px;
 }
-.formSerchTour .wrap {
+.formSearchTour .wrap {
     background: var(--color-6);
     border-radius: var(--br-4);
     padding: 15px;
@@ -218,8 +235,8 @@ button, input,select {
 .checkboxLabel input:checked ~ span {
     background: var(--color-5);
 }
-.formSerchTour .wrap .input,
-.formSerchTour .wrap .select {
+.formSearchTour .wrap .input,
+.formSearchTour .wrap .select {
     width: 100%;
     height: 50px;
     border: 0;
@@ -250,4 +267,168 @@ button, input,select {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+.section {
+    padding-top: 100px;
+}
+.sectionTitle {
+    margin-bottom: 25px;
+}
+.sectionDesc {
+    margin-bottom: 35px;
+    max-width: 680px;
+}
+.popularBlock_wrap {
+    display: flex;
+    gap: 20px;
+}
+.popularBlock_wrap.big .popularBlockCol {
+    width: 100%;
+    height: 100%;
+}
+.popularBlock_wrap.small {
+    margin-top: 20px;
+}
+.popularBlock_wrap.big .popularBlockCol:not(:last-child) {
+    max-width: 345px;
+    min-height: 430px;
+}
+.popularBlock_wrap.big .popularBlockCol:not(:last-child) .popularBlockItem {
+    min-height: 430px;
+}
+.popularBlock_wrap.big .popularBlockCol:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.popularBlock_wrap.big .popularBlockCol:last-child .popularBlockItem {
+    min-height: 205px;
+}
+.popularBlock_wrap.small .popularBlockItem {
+    width: 100%;
+    min-height: 205px;
+}
+.popularBlockItem {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--br-3);
+    position: relative;
+}
+.popularBlockItem_image {
+    position: absolute;
+}
+.popularBlockItem_icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.popularBlockItem_image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.popularBlockItem_price {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.popularBlockItem_title { 
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.popularBlockItemMore_title  {
+    font-family: var(--font-title);
+    font-size: 34px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.popularBlockItem.bg-white .popularBlockItem_icon {
+    background: var(--color-1);
+}
+.popularBlockItem.bg-white .popularBlockItem_icon img {
+    filter: invert(1);
+}
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    background: #fff;
+}
+.swiper-scrollbar-drag {
+    background: var(--color-6)
+}
+.catalog {
+    position: relative;
+}
+.catalogCard {
+    padding: 20px;
+    padding-top: 250px;
+    position: relative;
+    background: #fff;
+    border-radius: var(--br-3);
+    overflow: hidden;
+    font-weight: 500;
+}
+.catalogCard .title {
+    margin: 20px 0;
+}
+.catalogCard .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.catalogCard  .more {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border-radius: var(--br-2);
+    padding: 11px 0;
+    margin-top: 30px;
+}
+.catalogCard  .more  .icon {
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 10px;
+}
+.catalog .swiper {
+    padding-bottom: 40px;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    display: none;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.swiper-button-prev {
+    transform: rotate(180deg);
+    left: -20px
+}
+.swiper-button-next  {
+    right: -20px;
+}
+section.hit {
+    padding-bottom: 100px;
 }

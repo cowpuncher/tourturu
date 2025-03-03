@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="./assets/fonts/manrope/stylesheet.css">
     <link rel="stylesheet" href="./assets/fonts/palatino/stylesheet.css">
     <link rel="stylesheet" href="./assets/fonts/palatino1/palatino.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>HTML - TourTuru</title>
 </head>
@@ -58,7 +62,7 @@
                         Мы предлагаем нашим туристам окунуться в мир незабываемых впечатлений, открывая все тайны и красоты Северной столицы и ее окрестностей.
                     </p>
                     <span class="smallText">Реестровый номер туроператора: 024208</span>
-                    <form class="formSerchTour">
+                    <form class="formSearchTour">
                         <div class="wrap">
                             <input type="date" class="input" placeholder="Дата">
                             <select class="select">
@@ -112,9 +116,132 @@
                 <section class="section popular">
                     <h2 class="sectionTitle">Популярные направления</h2>
                     <p class="sectionDesc">Собрали для вас самые лучшие предложения</p>
+                    <div class="popularBlock">
+                        <div class="popularBlock_wrap big">
+                            <div class="popularBlockCol">
+                                <a href="#" class="popularBlockItem bg-3">
+                                    <span class="popularBlockItem_title">Пригородные <br> экскурсии</span>
+                                    <span class="popularBlockItem_image"><img src="./assets/img/pop-image-1.jpg" alt=""></span>
+                                    <span class="popularBlockItem_price">от 1500 ₽</span>
+                                    <div class="popularBlockItem_icon"><img src="./assets/img/arrow.svg" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="popularBlockCol">
+                                <a href="#" class="popularBlockItem bg-2">
+                                    <span class="popularBlockItem_title">Экскурсии по городу</span>
+                                    <span class="popularBlockItem_image"><img src="./assets/img/pop-image-2.png" alt=""></span>
+                                    <span class="popularBlockItem_price">от 1500 ₽</span>
+                                    <div class="popularBlockItem_icon"><img src="./assets/img/arrow.svg" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="popularBlockCol">
+                                <a href="#" class="popularBlockItem bg-1">
+                                    <span class="popularBlockItem_title">Дальние экскурсии</span>
+                                    <span class="popularBlockItem_image"><img src="./assets/img/pop-image-3.png" alt=""></span>
+                                    <span class="popularBlockItem_price">от 1500 ₽</span>
+                                    <div class="popularBlockItem_icon"><img src="./assets/img/arrow.svg" alt=""></div>
+                                </a>
+                                <a href="#" class="popularBlockItem bg-cloud">
+                                    <span class="popularBlockItem_title">Водные экскурсии</span>
+                                    <span class="popularBlockItem_image"><img src="./assets/img/pop-image-4.png" alt=""></span>
+                                    <span class="popularBlockItem_price">от 1500 ₽</span>
+                                    <div class="popularBlockItem_icon"><img src="./assets/img/arrow.svg" alt=""></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="popularBlock_wrap small">
+                            <a href="#" class="popularBlockItem bg-6 ">
+                                <span class="popularBlockItem_title">Экскурсии <br> с посещением музеев</span>
+                                <span class="popularBlockItem_image"><img src="./assets/img/pop-image-6.png" alt=""></span>
+                                <span class="popularBlockItem_price">от 1500 ₽</span>
+                                <div class="popularBlockItem_icon"><img src="./assets/img/arrow.svg" alt=""></div>
+                            </a>
+                            <a href="#" class="popularBlockItem bg-5 ">
+                                <span class="popularBlockItem_title">Мистические <br> экскурсии</span>
+                                <span class="popularBlockItem_image"><img src="./assets/img/pop-image-7.png" alt=""></span>
+                                <span class="popularBlockItem_price">от 1500 ₽</span>
+                                <div class="popularBlockItem_icon"><img src="./assets/img/arrow.svg" alt=""></div>
+                            </a>
+                            <a href="#" class="popularBlockItem bg-white">
+                                <div class="popularBlockItemMore_title">Посмотреть <br> все направления</div>
+                                <div class="popularBlockItem_icon"><img src="./assets/img/arrow.svg" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="section hit">
+                    <h2 class="sectionTitle">Хиты месяца</h2>
+                    <p class="sectionDesc">Выбирайте понравившуюся экскурсию, бронируйте дату и время, и готовьтесь к незабываемому путешествию по одному из самых красивых городов мира.</p>
+                    <div class="catalog">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide catalogCard">
+                                    <div class="image"><img src="./assets/img/hit-image-1.png" alt=""></div>
+                                    <div class="title">Новогодние огни с бокалом шампанского и подарками</div>
+                                    <div class="price">от 1 500 ₽</div>
+                                    <a href="#" class="btn more">
+                                        Подробнее
+                                        <div class="icon"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide catalogCard">
+                                    <div class="image"><img src="./assets/img/hit-image-2.png" alt=""></div>
+                                    <div class="title">Новогодние огни с бокалом шампанского и подарками</div>
+                                    <div class="price">от 1 500 ₽</div>
+                                    <a href="#" class="btn more">
+                                        Подробнее
+                                        <div class="icon"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide catalogCard">
+                                    <div class="image"><img src="./assets/img/hit-image-3.png" alt=""></div>
+                                    <div class="title">Новогодние огни с бокалом шампанского и подарками</div>
+                                    <div class="price">от 1 500 ₽</div>
+                                    <a href="#" class="btn more">
+                                        Подробнее
+                                        <div class="icon"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide catalogCard">
+                                    <div class="image"><img src="./assets/img/hit-image-4.png" alt=""></div>
+                                    <div class="title">Новогодние огни с бокалом шампанского и подарками</div>
+                                    <div class="price">от 1 500 ₽</div>
+                                    <a href="#" class="btn more">
+                                        Подробнее
+                                        <div class="icon"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide catalogCard">
+                                    <div class="image"><img src="./assets/img/hit-image-1.png" alt=""></div>
+                                    <div class="title">Новогодние огни с бокалом шампанского и подарками</div>
+                                    <div class="price">от 1 500 ₽</div>
+                                    <a href="#" class="btn more">
+                                        Подробнее
+                                        <div class="icon"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide catalogCard">
+                                    <div class="image"><img src="./assets/img/hit-image-1.png" alt=""></div>
+                                    <div class="title">Новогодние огни с бокалом шампанского и подарками</div>
+                                    <div class="price">от 1 500 ₽</div>
+                                    <a href="#" class="btn more">
+                                        Подробнее
+                                        <div class="icon"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-button-prev"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                        <div class="swiper-button-next"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+
                 </section>
             </main>
         </div>
     </div>
 </body>
+<script src="./assets/js/script.js"></script>
 </html>
