@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fonts/manrope/stylesheet.css">
+    <link rel="stylesheet" href="./assets/fonts/palatino/stylesheet.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>HTML - TourTuru</title>
+</head>
+<body>
+    <div class="mainWrapper">
+        <div class="container">
+            <div class="topPanel">
+                <a href="/" class="logo"><img src="./assets/img/logo.svg" alt=""></a>
+                <nav class="navigation">
+                    <ul class="menu">
+                        <li>
+                            <a href="#">Каталог</a>
+                            <ul class="dropmenu">
+                                <li><a href="#">Автобусные</a></li>
+                                <li><a href="#">Водные</a></li>
+                                <li><a href="#">Пешеходные</a></li>
+                                <li><a href="#">Индивидуальные</a></li>
+                                <li><a href="#">Ночные</a></li>
+                                <li><a href="#">Семейный отдых</a></li>
+                                <li><a href="#">Петропавловская крепость</a></li>
+                                <li><a href="#">Атмосферные места</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Направление</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Скидки</a></li>
+                        <li><a href="#">Гиды</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="contacts">
+                    <a href="tel:89110002211" class="phone">8 999 007 17 20</a>
+                    <address class="address">Набережная реки Мойки, 48/50</address>
+                </div>
+                <div class="info">
+                    <a href="#" class="favorites"><img src="./assets/img/favorite.svg" alt="favorite"></a>
+                    <span class="fearchBth"><img src="./assets/img/search.svg" alt="search"></span>
+                </div>
+                <div class="burgerMenu color-1">
+                    <div class="burderIcon"><span></span><span></span><span></span><span></span></div>
+                    Меню
+                </div>
+            </div>
+            <main class="mainContent">
+                
+                <section class="section detailPage">
+                    
+                    <div class="topLineSection">
+                        <h2 class="sectionTitle">Экскурсия в Новогоднюю ночь
+                            и встреча Нового года 2025 с подарками</h2>
+                        <a href="#" class="favLink">
+                            Добавить в избранное
+                            <div class="fav"><img src="./assets/img//fav_card.svg" alt=""></div>
+                        </a>
+                    </div>
+                    <div class="detailAbout">
+                        <div class="detailAbout_content">
+                            <p>
+                                Приглашаем отправиться в путешествие по классическому Петербургу.
+                                Во время прогулки на комфортабельном автобусе вы увидите все главные достопримечательности города и узнаете множество удивительных фактов о Северной столице
+                            </p>
+                            <p>
+                                Приглашаем отправиться в путешествие по классическому Петербургу.
+                                Во время прогулки на комфортабельном автобусе вы увидите все главные достопримечательности города и узнаете множество удивительных фактов о Северной столице
+                                Приглашаем отправиться в путешествие по классическому Петербургу.
+                            </p>
+                            <div class="price">
+                                от 1 500 ₽ / чел.
+                                <span>от 4 500 ₽</span>
+                            </div>
+                            <div class="detailAbout_buttons">
+                                
+                                <a href="#" class="btn btn-main">
+                                    Забронировать
+                                    <span class="icon"><img src="./assets/img/arrow-small-more.svg" alt=""></span>
+                                </a>
+                                <a href="#" class="btnLight">
+                                    Программа экскурсии
+                                    <div class="icon"><img src="./assets/img/arrow-small-light.svg" alt=""></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="detailAbout_sidebar">
+                            <div class="detailAbout_sidebar__item">
+                                <div class="icon"><img src="./assets/img/sidebar-1.svg" alt=""></div>
+                                <div>
+                                    <div class="name">Дни недели:</div>
+                                    <span>Пн, Пт, Чт, Сб</span>
+                                </div>
+                            </div>
+                            <div class="detailAbout_sidebar__item">
+                                <div class="icon"><img src="./assets/img/sidebar-2.svg" alt=""></div>
+                                <div>
+                                    <div class="name">Место встречи:</div>
+                                    <span>Невский, 20  / Ленина, 20 </span>
+                                </div>
+                            </div>
+                            <div class="detailAbout_sidebar__item">
+                                <div class="icon"><img src="./assets/img/sidebar-3.svg" alt=""></div>
+                                <div>
+                                    <div class="name">Время отправления:</div>
+                                    <span>10:00, 10:30, 11:30, 12:00, 13:30, 14:00, 15:00, 15:30</span>
+                                </div>
+                            </div>
+                            <div class="detailAbout_sidebar__item">
+                                <div class="icon"><img src="./assets/img/sidebar-4.svg" alt=""></div>
+                                <div>
+                                    <div class="name">Количество участников:</div>
+                                    <span>4 - 6 человек</span>
+                                </div>
+                            </div>
+                            <div class="detailAbout_sidebar__item">
+                                <div class="icon"><img src="./assets/img/sidebar-5.svg" alt=""></div>
+                                <div>
+                                    <div class="name">Тайминг:</div>
+                                    <span>4 часа</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section gallery gridSecond">
+
+                    <a class="gridSecond_item gridSecond_1" href="./assets/img/gallery.png" data-fancybox="gallery" data-caption="Caption #1">
+                        <img src="./assets/img/gallery.png" />
+                    </a>
+                    <a class="gridSecond_item gridSecond_2" href="./assets/img/gallery-1.png" data-fancybox="gallery" data-caption="Caption #1">
+                        <img src="./assets/img/gallery-1.png" />
+                    </a>
+                    <a class="gridSecond_item gridSecond_3" href="./assets/img/gallery-1.png" data-fancybox="gallery" data-caption="Caption #1">
+                        <img src="./assets/img/gallery-1.png" />
+                    </a>
+                    <a class="gridSecond_item gridSecond_4" href="./assets/img/gallery-1.png" data-fancybox="gallery" data-caption="Caption #1">
+                        <img src="./assets/img/gallery-1.png" />
+                    </a>
+                    <a class="gridSecond_item gridSecond_5 " href="./assets/img/gallery-1.png" data-fancybox="gallery" data-caption="Caption #1">
+                        <img src="./assets/img/gallery-1.png" />
+                        <div class="wrapper">
+                            Смотреть все фото
+                            <div class="icon"><img src="./assets/img/plus.svg" alt=""></div>
+                        </div>
+                    </a>
+                    <a class="hidden" href="./assets/img/gallery-1.png" data-fancybox="gallery" data-caption="Caption #1">
+                        <img src="./assets/img/gallery-1.png" />
+                    </a>
+                    <a class="hidden" href="./assets/img/gallery-1.png" data-fancybox="gallery" data-caption="Caption #1">
+                        <img src="./assets/img/gallery-1.png" />
+                    </a>
+                </section>
+
+                <section class="section">
+                    <div class="programm">
+                        <div class="programm_col__about">
+                            <h2>программа экскурсии:</h2>
+                            <ol>
+                                <li>
+                                    <div class="title">Начало поездки</div>
+                                    <div class="text">Путешествие начинается с отправления на комфортабельном автобусе по Невскому проспекту. По пути вы осмотрите самые известные достопримечательности Северной столицы: Эрмитаж, Дворцовую набережную, Мраморный дворец и многие другие</div>
+                                </li>
+                                <li>
+                                    <div class="title">Начало поездки</div>
+                                    <div class="text">Путешествие начинается с отправления на комфортабельном автобусе по Невскому проспекту. По пути вы осмотрите самые известные достопримечательности Северной столицы: Эрмитаж, Дворцовую набережную, Мраморный дворец и многие другие</div>
+                                </li>
+                                <li>
+                                    <div class="title">Начало поездки</div>
+                                    <div class="text">Путешествие начинается с отправления на комфортабельном автобусе по Невскому проспекту. По пути вы осмотрите самые известные достопримечательности Северной столицы: Эрмитаж, Дворцовую набережную, Мраморный дворец и многие другие</div>
+                                </li>
+                                <li>
+                                    <div class="title">Начало поездки</div>
+                                    <div class="text">Путешествие начинается с отправления на комфортабельном автобусе по Невскому проспекту. По пути вы осмотрите самые известные достопримечательности Северной столицы: Эрмитаж, Дворцовую набережную, Мраморный дворец и многие другие</div>
+                                </li>
+                                <li>
+                                    <div class="title">Начало поездки</div>
+                                    <div class="text">Путешествие начинается с отправления на комфортабельном автобусе по Невскому проспекту. По пути вы осмотрите самые известные достопримечательности Северной столицы: Эрмитаж, Дворцовую набережную, Мраморный дворец и многие другие</div>
+                                </li>
+                                <li>
+                                    <div class="title">Начало поездки</div>
+                                    <div class="text">Путешествие начинается с отправления на комфортабельном автобусе по Невскому проспекту. По пути вы осмотрите самые известные достопримечательности Северной столицы: Эрмитаж, Дворцовую набережную, Мраморный дворец и многие другие</div>
+                                </li>
+                                <li>
+                                    <div class="title">Начало поездки</div>
+                                    <div class="text">Путешествие начинается с отправления на комфортабельном автобусе по Невскому проспекту. По пути вы осмотрите самые известные достопримечательности Северной столицы: Эрмитаж, Дворцовую набережную, Мраморный дворец и многие другие</div>
+                                </li>
+                                <li>
+                                    <div class="title">Начало поездки</div>
+                                    <div class="text">Путешествие начинается с отправления на комфортабельном автобусе по Невскому проспекту. По пути вы осмотрите самые известные достопримечательности Северной столицы: Эрмитаж, Дворцовую набережную, Мраморный дворец и многие другие</div>
+                                </li>
+                                <li>
+                                    <div class="title">Начало поездки</div>
+                                    <div class="text">Путешествие начинается с отправления на комфортабельном автобусе по Невскому проспекту. По пути вы осмотрите самые известные достопримечательности Северной столицы: Эрмитаж, Дворцовую набережную, Мраморный дворец и многие другие</div>
+                                </li>
+                            </ol>
+                            <h2>В стоимость экскурсии входит:</h2>
+                            <ul>
+                                <li>Транспортное обслуживание</li>
+                                <li>Услуги гида на протяжении всей прогулки</li>
+                            </ul>
+                        </div>
+                        <div class="programm_col__route">
+                            <div class="route">
+                                <div class="start">Отправление</div>
+                                <div class="route_item">Невский проспект</div>
+                                <div class="route_item">Аничков мост</div>
+                                <div class="route_item">Аничков дворец</div>
+                                <div class="route_item">Казанский собор</div>
+                                <div class="end">Завершение</div>
+                            </div>
+                            <div class="infoBanner">
+                                <div class="infoBannerTop">
+                                    <div class="icon">!</div>
+                                    <h3>Обращаем
+                                        ваше внимание</h3>
+                                </div>
+                                <p>Маршрут может быть скорректирован
+                                    в зависимости от дорожной
+                                    ситуации и подачи гида</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detailAbout_sidebar">                                
+                            <div class="autorBlock">
+                                <div class="image"><img src="./assets/img/ava-1.png" alt=""></div>
+                                <div class="autor">
+                                    <div class="name">Губкина Анна</div>
+                                    <div class="position">Ваш гид по экскурсии</div>
+                                </div>
+                            </div>
+                            
+                            <ul>
+                                <li>Транспортное обслуживание</li>
+                                <li>Услуги гида на протяжении всей прогулки</li>
+                                <li>Транспортное обслуживание</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section pay">
+                    <h2>забронировать экскурсию</h2>
+                    <img src="./assets/img/bron.png" alt="">
+                </section>
+
+                <section class="section review">
+                    <div class="topLineSection">
+                        <h2 class="sectionTitle">отзывы <br>
+                            наших клиентов</h2>
+                        <a href="#" class="btnLight">
+                            Написать отзыв
+                            <div class="icon"><img src="./assets/img/arrow-small-light.svg" alt=""></div>
+                        </a>
+                    </div>
+                    <div class="reviewList">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide reviewCard">
+                                    <div class="reviewCard_top">
+                                        <div class="avatar"><img src="./assets/img/ava-1.png" alt=""></div>
+                                        <div class="reviewCard_top__bg">
+                                            <a href="#">Читать отзыв</a>
+                                            <img src="./assets/img/stars.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">Римма</div>
+                                    <p class="text">В автобусный тур в город Санкт-Петербург я ездила в далеком 2011 году. Это поездка на меня произвела огромное впечатление в хорошем смысле. Ездили мы экскурсионной группой. </p>
+                                    <time >20.04.2024 </time>
+                                </div>
+                                <div class="swiper-slide reviewCard">
+                                    <div class="reviewCard_top">
+                                        <div class="avatar"><img src="./assets/img/ava-2.png" alt=""></div>
+                                        <div class="reviewCard_top__bg">
+                                            <a href="#">Читать отзыв</a>
+                                            <img src="./assets/img/stars.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">Римма</div>
+                                    <p class="text">В автобусный тур в город Санкт-Петербург я ездила в далеком 2011 году. Это поездка на меня произвела огромное впечатление в хорошем смысле. Ездили мы экскурсионной группой. </p>
+                                    <time >20.04.2024 </time>
+                                </div>
+                                <div class="swiper-slide reviewCard">
+                                    <div class="reviewCard_top">
+                                        <div class="avatar"><img src="./assets/img/ava-3.png" alt=""></div>
+                                        <div class="reviewCard_top__bg">
+                                            <a href="#">Читать отзыв</a>
+                                            <img src="./assets/img/stars.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">Римма</div>
+                                    <p class="text">В автобусный тур в город Санкт-Петербург я ездила в далеком 2011 году. Это поездка на меня произвела огромное впечатление в хорошем смысле. Ездили мы экскурсионной группой. </p>
+                                    <time >20.04.2024 </time>
+                                </div>
+                                <div class="swiper-slide reviewCard">
+                                    <div class="reviewCard_top">
+                                        <div class="avatar"><img src="./assets/img/ava-4.png" alt=""></div>
+                                        <div class="reviewCard_top__bg">
+                                            <a href="#">Читать отзыв</a>
+                                            <img src="./assets/img/stars.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">Римма</div>
+                                    <p class="text">В автобусный тур в город Санкт-Петербург я ездила в далеком 2011 году. Это поездка на меня произвела огромное впечатление в хорошем смысле. Ездили мы экскурсионной группой. </p>
+                                    <time >20.04.2024 </time>
+                                </div>
+                                <div class="swiper-slide reviewCard">
+                                    <div class="reviewCard_top">
+                                        <div class="avatar"><img src="./assets/img/ava-1.png" alt=""></div>
+                                        <div class="reviewCard_top__bg">
+                                            <a href="#">Читать отзыв</a>
+                                            <img src="./assets/img/stars.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">Римма</div>
+                                    <p class="text">В автобусный тур в город Санкт-Петербург я ездила в далеком 2011 году. Это поездка на меня произвела огромное впечатление в хорошем смысле. Ездили мы экскурсионной группой. </p>
+                                    <time >20.04.2024 </time>
+                                </div>
+                                <div class="swiper-slide reviewCard">
+                                    <div class="reviewCard_top">
+                                        <div class="avatar"><img src="./assets/img/ava-1.png" alt=""></div>
+                                        <div class="reviewCard_top__bg">
+                                            <a href="#">Читать отзыв</a>
+                                            <img src="./assets/img/stars.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">Римма</div>
+                                    <p class="text">В автобусный тур в город Санкт-Петербург я ездила в далеком 2011 году. Это поездка на меня произвела огромное впечатление в хорошем смысле. Ездили мы экскурсионной группой. </p>
+                                    <time >20.04.2024 </time>
+                                </div>
+                                <div class="swiper-slide reviewCard">
+                                    <div class="reviewCard_top">
+                                        <div class="avatar"><img src="./assets/img/ava-1.png" alt=""></div>
+                                        <div class="reviewCard_top__bg">
+                                            <a href="#">Читать отзыв</a>
+                                            <img src="./assets/img/stars.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="name">Римма</div>
+                                    <p class="text">В автобусный тур в город Санкт-Петербург я ездила в далеком 2011 году. Это поездка на меня произвела огромное впечатление в хорошем смысле. Ездили мы экскурсионной группой. </p>
+                                    <time >20.04.2024 </time>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                        <div class="swiper-button-next"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                    </div>
+                </section>
+
+                <section class="section faq">
+                    
+                    <h2 class="sectionTitle">ЧАСТЫЕ ВОПРОСЫ</h2>
+                    <div class="faq">
+                        <div class="accordion" id="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">Как выбрать экскурсию?</div>
+                                <div>Текст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст</div>
+                            </div> 
+                           
+                            <div class="accordion-item">
+                                <div class="accordion-header">Какие достопримечательности включены в программу экскурсии?</div>
+                                <div>Текст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст</div>
+                            </div> 
+                           
+                            <div class="accordion-item">
+                                <div class="accordion-header">Сколько стоит экскурсия и какие варианты оплаты принимаются?</div>
+                                <div>Текст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст</div>
+                            </div>
+                           
+                            <div class="accordion-item">
+                                <div class="accordion-header">Есть ли русскоязычные гиды и  аудиогиды на других языках?</div>
+                                <div>Текст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст</div>
+                            </div>
+                           
+                            <div class="accordion-item">
+                                <div class="accordion-header">Как долго длится экскурсия и когда она начинается?</div>
+                                <div>Текст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст</div>
+                            </div>
+                           
+                            <div class="accordion-item">
+                                <div class="accordion-header">Могу ли я отменить бронирование и получить возврат средств? </div>
+                                <div>Текст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст описаниеТекст</div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section recom">
+                    
+                    <div class="topLineSection">
+                        <h2 class="sectionTitle">РЕКОМЕНДУЕМ В ЭТОМ МЕСЯЦЕ</h2>
+                        <a href="#" class="btnLight">
+                            Перейти в каталог
+                            <div class="icon"><img src="./assets/img/arrow-small-light.svg" alt=""></div>
+                        </a>
+                    </div>
+
+                    
+                    <div class="catalogBlock">
+                        <div class="catalogCard">
+                            <div class="fav"><img src="./assets/img/fav_card.svg" alt=""></div>
+                            <div class="image"><img src="./assets/img/hit-image-1.png" alt=""></div>
+                            <div class="title">Новогодние огни с бокалом шампанского и подарками</div>
+                            <div class="infoList">
+                                <div class="infoListItem">14.01.2024 - 20.01.2024</div>
+                                <div class="infoListItem">2-6 чел.</div>
+                                <div class="infoListItem">10 ч.</div>
+                            </div>
+                            <div class="price">от 1 500 ₽ <span>от 4 500 ₽</span></div>
+                            <a href="#" class="btn more">
+                                Подробнее
+                                <div class="icon"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="catalogCard">
+                            <div class="fav"><img src="./assets/img/fav_card.svg" alt=""></div>
+                            <div class="image"><img src="./assets/img/hit-image-1.png" alt=""></div>
+                            <div class="title">Новогодние огни с бокалом шампанского и подарками</div>
+                            <div class="infoList">
+                                <div class="infoListItem">14.01.2024 - 20.01.2024</div>
+                                <div class="infoListItem">2-6 чел.</div>
+                                <div class="infoListItem">10 ч.</div>
+                            </div>
+                            <div class="price">от 1 500 ₽ <span>от 4 500 ₽</span></div>
+                            <a href="#" class="btn more">
+                                Подробнее
+                                <div class="icon"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="catalogCard">
+                            <div class="fav"><img src="./assets/img/fav_card.svg" alt=""></div>
+                            <div class="image"><img src="./assets/img/hit-image-1.png" alt=""></div>
+                            <div class="title">Новогодние огни с бокалом шампанского и подарками</div>
+                            <div class="infoList">
+                                <div class="infoListItem">14.01.2024 - 20.01.2024</div>
+                                <div class="infoListItem">2-6 чел.</div>
+                                <div class="infoListItem">10 ч.</div>
+                            </div>
+                            <div class="price">от 1 500 ₽ <span>от 4 500 ₽</span></div>
+                            <a href="#" class="btn more">
+                                Подробнее
+                                <div class="icon"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="catalogCard">
+                            <div class="fav"><img src="./assets/img/fav_card.svg" alt=""></div>
+                            <div class="image"><img src="./assets/img/hit-image-1.png" alt=""></div>
+                            <div class="title">Новогодние огни с бокалом шампанского и подарками</div>
+                            <div class="infoList">
+                                <div class="infoListItem">14.01.2024 - 20.01.2024</div>
+                                <div class="infoListItem">2-6 чел.</div>
+                                <div class="infoListItem">10 ч.</div>
+                            </div>
+                            <div class="price">от 1 500 ₽ <span>от 4 500 ₽</span></div>
+                            <a href="#" class="btn more">
+                                Подробнее
+                                <div class="icon"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="catalogCard">
+                            <div class="fav"><img src="./assets/img/fav_card.svg" alt=""></div>
+                            <div class="image"><img src="./assets/img/hit-image-1.png" alt=""></div>
+                            <div class="title">Новогодние огни с бокалом шампанского и подарками</div>
+                            <div class="infoList">
+                                <div class="infoListItem">14.01.2024 - 20.01.2024</div>
+                                <div class="infoListItem">2-6 чел.</div>
+                                <div class="infoListItem">10 ч.</div>
+                            </div>
+                            <div class="price">от 1 500 ₽ <span>от 4 500 ₽</span></div>
+                            <a href="#" class="btn more">
+                                Подробнее
+                                <div class="icon"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="catalogCard">
+                            <div class="fav"><img src="./assets/img/fav_card.svg" alt=""></div>
+                            <div class="image"><img src="./assets/img/hit-image-1.png" alt=""></div>
+                            <div class="title">Новогодние огни с бокалом шампанского и подарками</div>
+                            <div class="infoList">
+                                <div class="infoListItem">14.01.2024 - 20.01.2024</div>
+                                <div class="infoListItem">2-6 чел.</div>
+                                <div class="infoListItem">10 ч.</div>
+                            </div>
+                            <div class="price">от 1 500 ₽ <span>от 4 500 ₽</span></div>
+                            <a href="#" class="btn more">
+                                Подробнее
+                                <div class="icon"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="catalogCard">
+                            <div class="fav"><img src="./assets/img/fav_card.svg" alt=""></div>
+                            <div class="image"><img src="./assets/img/hit-image-1.png" alt=""></div>
+                            <div class="title">Новогодние огни с бокалом шампанского и подарками</div>
+                            <div class="infoList">
+                                <div class="infoListItem">14.01.2024 - 20.01.2024</div>
+                                <div class="infoListItem">2-6 чел.</div>
+                                <div class="infoListItem">10 ч.</div>
+                            </div>
+                            <div class="price">от 1 500 ₽ <span>от 4 500 ₽</span></div>
+                            <a href="#" class="btn more">
+                                Подробнее
+                                <div class="icon"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                            </a>
+                        </div>
+                        <div class="catalogCard">
+                            <div class="fav"><img src="./assets/img/fav_card.svg" alt=""></div>
+                            <div class="image"><img src="./assets/img/hit-image-1.png" alt=""></div>
+                            <div class="title">Новогодние огни с бокалом шампанского и подарками</div>
+                            <div class="infoList">
+                                <div class="infoListItem">14.01.2024 - 20.01.2024</div>
+                                <div class="infoListItem">2-6 чел.</div>
+                                <div class="infoListItem">10 ч.</div>
+                            </div>
+                            <div class="price">от 1 500 ₽ <span>от 4 500 ₽</span></div>
+                            <a href="#" class="btn more">
+                                Подробнее
+                                <div class="icon"><img src="./assets/img/arrow-small-more.svg" alt=""></div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section feedback">
+                    <div class="feedbackWrap">
+                        <div class="image"><img src="./assets/img/feedback.jpg" alt=""></div>
+                        <form class="formFeedback bg-3">
+                            <h2 class="sectionTitle">узнавайте о новых <br> турах первыми</h2>
+                            <p class="desc">Подпишитесь на нашу рассылку</p>
+                            <input type="email" name="email" class="input" placeholder="Ваш E-mail">
+                            <button class="btn">
+                                Подписаться на рассылку
+                                <div class="icon"><img src="./assets/img/arrow-small-more.svg"></div>
+                            </button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footerBody">
+                    <div class="footerInfo">
+                        <div class="logo"><img src="./assets/img/logo.svg" alt=""></div>
+                        <div class="footerInfoMain">
+                            <div class="footerInfoMain_col contacts">
+                                <div class="title">Контакты</div>
+                                <a href="tel:" class="phone">8 (999) 007-17-20</a>
+                                <div class="social">
+                                    <a href="#"><img src="./assets/img/soc-1s.svg" alt=""></a>
+                                    <a href="#"><img src="./assets/img/soc-2.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="footerInfoMain_col nav">
+                                <div class="title">Меню</div>
+                                <ul>
+                                    <li><a href="#">Каталог</a></li>
+                                    <li><a href="#">О компании</a></li>
+                                    <li><a href="#">Скидки</a></li>
+                                    <li><a href="#">Гиды</a></li>
+                                    <li><a href="#">Блог</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="footerInfoMain_col direction">
+                                <div class="title">Направления</div>
+                                <ul>
+                                    <li><a href="#">Экскурсии по городу</a></li>
+                                    <li><a href="#">Пригородные экскурсии</a></li>
+                                    <li><a href="#">Дальние экскурсии</a></li>
+                                    <li><a href="#">Водные экскурсии</a></li>
+                                    <li><a href="#">Экскурсии с посещением музеев</a></li>
+                                    <li><a href="#">Мистические экскурсии</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footerInfoBottom">
+                            <address>
+                                <span class="title">Адрес</span>
+                                Санкт-Петербург, Набережная реки Мойки, 48/50
+                            </address>
+                            <div class="btn searchBtn">
+                                Подобрать экскурсию
+                                <div class="icon"><img src="./assets/img/search-purple.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footerBanner"><img src="./assets/img/footer_banner.png" alt=""></div>
+                </div>
+                <div class="footerBottom">
+                    <p>© 2024 PiterTour</p>
+
+                    <p><a href="#">Политика конфиденциальности</a></p>
+
+                    <p>Разработка сайта — <a href="#">HelmutTeam</a></p>
+
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+<script src="./assets/js/script.js"></script>
+</html>
