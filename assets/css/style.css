@@ -135,7 +135,11 @@ button, input,select {
 .bg-10 {
     background: linear-gradient(265.3deg, #D5F2FF 19.41%, #C5DEE9 111.61%);
 }
-
+.mainBannerContent .desc,
+.mainBannerContent .smallText,
+.mainBannerContent .labelCkeckbox {
+    opacity: .68;
+}
 .icon {
     display: flex;
     align-items: center;
@@ -495,6 +499,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .wrapCheckbox {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
 }
 .section {
@@ -897,6 +902,11 @@ p.left {
     border-radius: 50%;
     position: relative;
     z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
 }
 .reviewCard_top {
     position: relative;
@@ -2180,4 +2190,300 @@ div#accordion {
 }
 .popup .feedbackWrap .image img {
     height: 100%;
+}
+.mainContent .image img,
+.video img {
+    width: 100%;
+}
+.playVideo img {
+    width: auto;
+}
+
+@media screen and (max-width: 1440px) {
+    .catalogCard {
+        padding-top: 16.5vw;
+    }
+}
+@media screen and (max-width: 1300px) {
+    :root {
+        --fs-h1: 45px;
+        --fs-h2: 35px;
+
+    }
+    .section {
+        padding-top: 75px;
+    }
+    .mainBanner {
+        padding: 50px 45px;
+    }
+    .searchBtnTour {
+        min-width: 240px;
+    }
+    .popularBlock_wrap.big .popularBlockCol:not(:last-child) {
+        max-width: 275px;
+    }
+    .menu {
+        gap: 20px;
+    }
+    .topPanel address,
+    .menu a {
+        font-size: 13px;
+    }
+    .topPanel .phone {
+        font-size: var(--fs-2);
+    }
+    .topPanel .info {
+        margin: 0 10px 0 5px;
+    }
+    .topPanel {
+        padding: 15px;
+    }
+    .popularBlockItemMore_title {
+        font-size: 25px;
+    }
+    .popularBlock_wrap.big .popularBlockCol:not(:last-child) .popularBlockItem_image {
+        /* width: 24vw; */
+        right: -4vw;
+    }
+    .popularBlockItem  {
+        overflow: hidden;
+    }
+    .popularBlock_wrap.big .popularBlockCol:last-child img {
+        width: 32vw;
+    }
+    .popularBlock_wrap.big .popularBlockCol:last-child .popularBlockItem_icon img {
+        width: auto;
+    }
+    .categoryCards_card {
+        height: 23vw;
+    }
+    .categoryList a {
+        font-size: var(--fs-1);
+        padding: 10px 24px;
+    }
+    .bannerSection .image {
+        display: flex    ;
+        justify-content: flex-end;
+    }
+    .bannerSection .image img {
+        width: 60vw;
+    }
+    .gridCard .bigText {
+        font-size: 100px;
+    }
+    .gridCard .title {
+        font-size: 14px;
+        width: 200px;
+    }
+    .gridCard .bigText .icon {
+        font-size: 20px;
+        top: 55%;
+    }
+    .reviewCard .avatar {
+        width: 50px;
+        height: 50px;
+    }
+    .reviewCard_top__bg {
+        width: 100%;
+        gap: 6px;
+        padding: 8px 10px;
+    }
+    .reviewCard .name {
+        font-size: var(--fs-2);
+
+    }
+    .ui-accordion .ui-accordion-header {
+        font-size: 15px;
+    }
+    .ui-accordion .ui-accordion-content {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .topPanel .navigation .menu {
+        display: none;
+    }
+    .topPanel .info {
+        margin: 0 25px 0 40px;
+    }
+    .mainBannerContent .smallText,
+    .mainBannerContent .labelCkeckbox {
+        font-size: 12px;
+    }
+    .wrapCheckbox {
+        gap: 10px;
+    }
+    .popularBlock_wrap.big .popularBlockCol:not(:last-child) .popularBlockItem {
+        min-height: 260px;
+    }
+    .popularBlock_wrap.big .popularBlockCol:last-child .popularBlockItem {
+        min-height: 120px;
+    }
+    .popularBlock_wrap.small .popularBlockItem {
+        width: 100%;
+        min-height: 120px;
+    }
+    .popularBlock_wrap.big .popularBlockCol:not(:last-child) {
+        min-height: fit-content;
+    }
+    .popularBlockItemMore_title {
+        font-size: 20px;
+    }
+    
+    .section {
+        padding-top: 55px;
+    }
+    .popularBlock_wrap.big .popularBlockCol:not(:last-child) .popularBlockItem_image {
+        right: -5vw;
+    }
+    .popularBlock_wrap.big .popularBlockCol:not(:last-child) .popularBlockItem_image img {
+        width: 185px;
+    }
+    .popularBlock_wrap.big .popularBlockCol:last-child img {
+        width: 22vw;
+    }
+    .popularBlock_wrap.small .popularBlockItem:not(:last-child) img {
+        width: 22vw;
+    }
+    
+    .popularBlock_wrap.small .popularBlockItem:not(:last-child) .popularBlockItem_icon img {
+        width: auto;
+    }
+    .accordion-item {
+        width: 100%;
+    }
+    .formFeedback .sectionTitle {
+        font-size: var(--fs-4);
+    }
+    .formFeedback {
+        bottom: 20px;
+        left: 20px;
+        padding: 40px;
+        width: 595px;
+    }
+    .footerInfo {
+        padding: 20px;
+    }
+    .footerBottom p,
+    .footer .title {
+        font-size: 12px;
+    }
+    .footerInfoBottom,
+    .footerInfoMain ul a {
+        font-size: 13px;
+    }
+    .footerBanner img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+    
+}
+@media screen and (max-width: 993px) {
+    :root {
+        --fs-h1: 30px;
+    }
+    .topPanel .contacts {
+        display: none; 
+    } 
+    .topPanel {
+        padding: 10px;
+    }
+    .mainBannerContent .desc {
+        max-width: 350px;
+        margin: 15px 0;
+    }
+    .mainBanner {
+        padding: 30px;
+    }
+    .mainBanner .image img {
+        width: 74vw;
+    }
+    .textBtn {
+        display: none;
+    }
+    .searchBtnTour {
+        padding: 0;
+        width: auto;
+        height: 0;
+        min-height: fit-content;
+        min-width: auto;
+        background: transparent;
+    }
+    .searchBtnTour .icon {
+        background: var(--color-1);
+    }
+    .searchBtnTour .icon img {
+        filter: brightness(3);
+    }
+    .searchBtnTour:hover .icon {
+        background: var(--hover-1);
+    }
+    .formSearchTour .wrap {
+        gap: 10px;
+    }
+    .formSearchTour .wrap .input, .formSearchTour .wrap .select {
+        width: 100%;
+        height: 30px;
+        border: 0;
+        border-radius: 6px;
+        padding: 0px 10px;
+    }
+    .catalogCard {
+        padding-top: 20.5vw;
+    }
+    .categoryCards {
+        flex-wrap: wrap;
+    }
+    .categoryCards_card {
+        width: 48.5%;
+    }
+    .categoryCards_card {
+        height: 42vw;
+    }
+    .categoryList {
+        gap: 15px;
+    }
+    .banner .bannerTitle {
+        font-size: 25px;
+    }
+    .banner {
+        min-height: 250px;
+        padding: 30px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    
+    .grid_2 { grid-area: 1 / 1 / 2 / 2; }
+    .grid_3 { grid-area: 1 / 2 / 2 / 3; }
+    .grid_6 { grid-area: 1 / 3 / 2 / 4; }
+    .grid_5 { grid-area: 2 / 1 / 3 / 2; }
+    .grid_8 { grid-area: 2 / 2 / 3 / 3; }
+    .grid_9 { grid-area: 2 / 3 / 3 / 4; }
+    .grid_1 { grid-area: 3 / 1 / 4 / 3; }
+    .grid_4 { grid-area: 4 / 1 / 5 / 3; }
+    .grid_7 { grid-area: 3 / 3 / 5 / 4; }
+
+    .grid_7 {
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+    }
+    .grid_7 .text {
+        margin-left: 0;
+    }
+    .grid .text {
+        font-size: 13px;
+    }
+    .footerBanner {
+        display: none;
+    }
 }
