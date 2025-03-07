@@ -2379,7 +2379,9 @@ div#accordion {
         object-fit: cover;
         object-position: left;
     }
-    
+    .gridCard .bigText {
+        font-size: 90px;
+    }
 }
 @media screen and (max-width: 993px) {
     :root {
@@ -2453,7 +2455,9 @@ div#accordion {
         min-height: 250px;
         padding: 30px;
     }
-
+    .gridCard {
+        padding: 10px;
+    }
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -2485,5 +2489,15 @@ div#accordion {
     }
     .footerBanner {
         display: none;
+    }
+    .gridCard .bigText .icon {
+        font-size: 18px;
+    }
+    .grid_7 .bigText .icon {
+        right: -45px;
+        padding: 4px 7px;
+    }
+    .formFeedback input {
+        margin: 10px 0;
     }
 }
